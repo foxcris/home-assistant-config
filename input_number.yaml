@@ -1,0 +1,105 @@
+#  heating_kitchen:
+#    name: Heating
+#    initial: 22
+#    min: 0
+#    max: 35
+#    step: 1
+#    icon: mdi:fire
+#  heating_guest_room:
+#    name: Heating
+#    initial: 22
+#    min: 0
+#    max: 35
+#    step: 1
+#    icon: mdi:fire
+#  heating_living_room:
+#    name: Heating
+#    initial: 22
+#    min: 0
+#    max: 35
+#    step: 1
+#    icon: mdi:fire
+#  offset_blinds_down_after_sunset:
+#    name: "Offset for closing blinds after sunset"
+#    icon: mdi:alarm
+#    initial: 30
+#    min: -720
+#    max: 720
+#    step: 15
+#  offset_blinds_up_weekend:
+#    name: "Offset for open blinds at Weekends/Hollidays"
+#    icon: mdi:alarm
+#    initial: 30
+#    min: -720
+#    max: 720
+#    step: 15
+cooldown_night_blinds_position:
+  name: Position of blinds during cool down
+  min: 0
+  max: 100
+  step: 1
+  icon: mdi:blinds
+
+
+##Start## mariecover
+control_blinds_mariecover_cooldown_night_blinds_position:
+  name: Position of blinds during cool down
+  min: 0
+  max: 100
+  step: 1
+  icon: mdi:blinds
+##End## mariecover
+
+##Start## lisacover
+control_blinds_lisacover_cooldown_night_blinds_position:
+  name: Position of blinds during cool down
+  min: 0
+  max: 100
+  step: 1
+  icon: mdi:blinds
+##End## lisacover
+
+##Start## kitchen_level
+control_blinds_kitchen_level_cooldown_night_blinds_position:
+  name: Position of blinds during cool down
+  min: 0
+  max: 100
+  step: 1
+  icon: mdi:blinds
+##End## kitchen_level
+
+##Start## guest_room_level
+control_blinds_guest_room_level_cooldown_night_blinds_position:
+  name: Position of blinds during cool down
+  min: 0
+  max: 100
+  step: 1
+  icon: mdi:blinds
+##End## guest_room_level
+
+##Start## living_room_window_level
+control_blinds_living_room_window_level_cooldown_night_blinds_position:
+  name: Position of blinds during cool down
+  min: 0
+  max: 100
+  step: 1
+  icon: mdi:blinds
+##End## living_room_window_level
+
+##Start## living_room_door_level
+control_blinds_living_room_door_level_cooldown_night_blinds_position:
+  name: Position of blinds during cool down
+  min: 0
+  max: 100
+  step: 1
+  icon: mdi:blinds
+##End## living_room_door_level
+
+##Start## parentsbedroom_level
+control_blinds_parentsbedroom_level_cooldown_night_blinds_position:
+  name: Position of blinds during cool down
+  min: 0
+  max: 100
+  step: 1
+  icon: mdi:blinds
+##End## parentsbedroom_level

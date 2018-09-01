@@ -1,0 +1,56 @@
+  - platform: yr
+    monitored_conditions:
+      - symbol
+      - temperature
+      - humidity
+      - windSpeed
+      - pressure
+  - platform: fritzbox_callmonitor
+    host: 192.168.178.1
+    phonebook: 0 
+  - platform: plex
+    host: 192.168.100.30
+    username: !secret plex_username
+    password: !secret plex_password
+  - platform: time_date
+    display_options:
+      - 'time'
+      - 'date'
+      - 'date_time'
+      - 'time_date'
+      - 'time_utc'
+#      - 'beat'
+  - platform: fritzbox_netmonitor
+    friendly_name: Fritzbox Status
+    host: 192.168.178.1
+  - platform: template
+    sensors:
+      fritz_netmonitor_transmission_rate_down:
+        friendly_name: Transmission Rate Down
+        entity_id: sensor.fritz_netmonitor
+        value_template: >
+                          {{ '%.2f' | format(states.sensor.fritz_netmonitor.attributes.transmission_rate_down | float / 1024)}}
+        unit_of_measurement: 'kB/s'
+      fritz_netmonitor_transmission_rate_up:
+        friendly_name: Transmission Rate Up
+        entity_id: sensor.fritz_netmonitor
+        value_template: >
+                          {{ '%.2f' | format(states.sensor.fritz_netmonitor.attributes.transmission_rate_up | float / 1024) }}
+        unit_of_measurement: 'kB/s'
+      fritz_netmonitor_external_ip:
+        friendly_name: External IP
+        entity_id: sensor.fritz_netmonitor
+        value_template: >
+                          {{ states.sensor.fritz_netmonitor.attributes.external_ip }}
+      sun_next_rising:
+        friendly_name: Sun Next Rising
+        entity_id: sun.sun
+        value_template: >
+                          {{ as_timestamp(states.sun.sun.attributes.next_rising) | timestamp_local }}
+        icon_template: mdi:weather-sunset-up
+      sun_next_setting:
+        friendly_name: Sun Next Setting
+        entity_id: sun.sun
+        value_template: >
+                          {{ as_timestamp(states.sun.sun.attributes.next_setting) | timestamp_local }}
+        icon_template: mdi:weather-sunset-down

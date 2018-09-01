@@ -1,0 +1,12 @@
+  person_volker:
+    name: Volker
+    view: no
+    entities:
+      - device_tracker.motog5plusvolker
+      - device_tracker.vbo_pottern
+  person_katrin:
+    name: Katrin
+    view: no
+    entities:
+      - device_tracker.android9d143af16091349d
+      - device_tracker.kbo_sandersn

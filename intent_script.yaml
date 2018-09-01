@@ -1,0 +1,42 @@
+   OpenBlinds:
+     card:
+       type: simple
+       title: Open Blinds Card
+       content: I have opened the blinds.
+     action:
+       service: cover.open_cover
+   CloseBlinds:
+     card:
+       type: simple
+       title: Close Blinds Card
+       content: I have closed the blinds.
+     action:
+       service: cover.close_cover
+   StopBlinds:
+     card:
+       type: simple
+       title: Stop Blinds Card
+       content: I have stoped the blinds.
+     action:
+       service: cover.stop_cover
+   OpenBlinds2:
+     card:
+       type: simple
+       title: Open Blinds Card
+       content: I have opened the blinds.
+     action:
+       service: cover.open_cover
+   CloseBlinds2:
+     card:
+       type: simple
+       title: Close Blinds Card
+       content: I have closed the blinds.
+     action:
+       service: cover.close_cover
+   StopBlinds2:
+     card:
+       type: simple
+       title: Stop Blinds Card
+       content: I have stoped the blinds.
+     action:
+       service: cover.stop_cover

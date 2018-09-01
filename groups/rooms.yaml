@@ -1,0 +1,87 @@
+  Rooms:
+    name: Rooms
+    view: yes
+    entities:
+      - group.kitchen
+      - group.living_room
+      - group.guest_bath
+      - group.lisa_room
+      - group.marie_room
+      - group.parents_bedroom
+      - group.basement
+      - group.guest_room
+      - group.balcony_room
+      - group.roof_bath
+  kitchen:
+    name: Kitchen
+    view: no
+    entities:
+      - cover.kitchen_level
+      - climate.kitchenthermostat
+      - climate.kitchenwallthermostat
+  guest room:
+    name: Guest Room
+    view: no
+    entities:
+      - cover.guest_room_level
+      - climate.guestroomthermostat
+  guest bath:
+    name: Guest Bathroom
+    view: no
+    entities:
+      - climate.guestbaththermostat
+  living room:
+    name: Living Room
+    view: no
+    entities:
+      - cover.living_room_window_level
+      - cover.living_room_door_level
+      - climate.livingroomthermostat
+      - climate.livingroomwallthermostat
+  Basement:
+    name: Basement
+    view: no
+    entities:
+      - climate.basementthermostat
+      - sensor.basementpowermeter_power
+      - sensor.basementpowermeter_energy_counter
+  Balcony Room:
+    name: Balcony Room
+    view: no
+    entities:
+      - climate.balconythermostat
+  Roof Bath:
+    name: Roof Bathroom
+    view: no
+    entities:
+      - climate.roofbaththermostat
+  Marie Room:
+    name: Marie Room
+    view: no
+    entities:
+      - cover.mariecover
+  Lisa Room:
+    name: Lisa Room
+    view: no
+    entities:
+      - cover.lisacover
+  Basement Stairs:
+    name: Basement Stairs
+    view: no
+    entities:
+      - switch.basementstairsdownstairs
+      - sensor.fibaro_system_fgms001zw5_motion_sensor_temperature
+      - sensor.fibaro_system_fgms001zw5_motion_sensor_luminance
+      - sensor.fibaro_system_fgms001zw5_motion_sensor_general
+      - sensor.fibaro_system_fgms001zw5_motion_sensor_burglar
+      - binary_sensor.sensor
+  Basement Pantry:
+    name: Basement Pantry
+    view: no
+    entities:
+      - switch.basementpantry
+  Parents Bedroom:
+    name: Parents Bedroom
+    view: no
+    entities:
+      - cover.parentsbedroom_level

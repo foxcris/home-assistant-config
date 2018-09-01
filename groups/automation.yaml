@@ -1,0 +1,12 @@
+  automation:
+    name: Automation
+    view: yes
+    entities:
+      - automation.close_blind_after_sunset
+      - automation.presence_detection_home
+      - automation.open_blinds_after_sunrise
+      - automation.open_blinds_after_sunrise_time
+      - automation.send_notification_when_sun_rises
+      - automation.send_notification_when_sun_sets
+      - automation.startup_notification
+      - automation.update_notifications

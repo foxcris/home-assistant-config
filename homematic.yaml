@@ -1,0 +1,11 @@
+  interfaces:
+    pigear:
+      host: 192.168.178.17
+      port: 2001
+      #port: 2003
+      username: !secret homegearuser
+      password: !secret homegearpasswd
+      resolvenames: metadata
+      callback_ip: 192.168.178.19
+      callback_port: 49018
+  local_port: 49018

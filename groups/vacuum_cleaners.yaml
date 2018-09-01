@@ -1,0 +1,25 @@
+  vacuum_cleaners:
+    name: Vacuum
+    view: yes
+    entities:
+      - group.roborock_vacuum
+      - group.mi_robot_vacuum
+      - group.vacuum_config
+
+  vacuum_config:
+    name: Vacuum Config
+    view: no
+    entities:
+      - input_boolea.vacuum_enable_global
+
+  roborock_vacuum:
+    name: Roborock Vacuum
+    view: no
+    entities:
+      - vacuum.roborock_vacuum
+
+  mi_robot_vacuum:
+    name: Mi Robot Vacuum
+    view: no
+    entities:
+      - vacuum.mi_robot_vacuum

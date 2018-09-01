@@ -1,0 +1,8 @@
+  - platform: xiaomi_miio
+    host: 192.168.178.63
+    token: !secret xiaomi_vacuum_robot_token
+    name: Mi Robot Vacuum
+  - platform: xiaomi_miio
+    host: 192.168.178.88
+    token: !secret xiaomi_vacuum_roborock_token
+    name: Roborock Vacuum

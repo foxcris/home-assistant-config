@@ -1,0 +1,140 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 49
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Berlin
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+http:
+  server_port: 8123
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret http_password
+  # Uncomment this if you are using SSL or running in Docker etc
+  #base_url: home:8123
+  #ssl_certificate: fullchain.pem
+  #ssl_key: privkey.pem
+  ip_ban_enabled: True
+  login_attempts_threshold: 5
+
+# Checks for available updates
+updater:
+
+# Configuration panel
+config:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+#intent_script: !include intent_script.yaml
+
+#conversation: !include conversation.yaml
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+# Map
+map:
+
+# Track the sun
+sun:
+
+# Weather Prediction
+
+sensor: !include sensor.yaml
+binary_sensor: !include binary_sensor.yaml
+
+# Text to speech
+tts:
+  platform: google
+
+media_player: !include mediaplayer.yaml
+
+device_tracker: !include devicetracker.yaml
+
+zwave:
+  usb_path: /dev/ttyACM0
+  device_config: !include zwave_device_config.yaml
+  network_key: !secret zwave_network_key
+
+telegram_bot: !include telegram.yaml
+notify: !include notify.yaml
+
+group: !include_dir_merge_named groups
+
+panel_iframe: !include paneliframe.yaml
+
+mqtt: !include mqtt.yaml
+
+# This will override the default home zone
+zone:
+  name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  radius: 100
+  icon: mdi:home
+
+zone 2:
+  name: Work Volker
+  latitude: !secret work_volker_latitude
+  longitude: !secret work_volker_longitude
+  icon: mdi:domain
+
+zone 3:
+  name: Parents Volker
+  latitude: !secret parents_volker_latitude
+  longitude: !secret parents_volker_longitude
+  icon: mdi:home-outline
+
+zone 4:
+  name: Work Katrin
+  latitude: !secret work_katrin_latitude
+  longitude: !secret work_katrin_longitude
+  icon: mdi:domain
+
+zone 5:
+  name: Parents Katrin
+  latitude: !secret parents_katrin_latitude
+  longitude: !secret parents_katrin_longitude
+  icon: mdi:home-outline
+
+automation old: !include_dir_merge_list automation
+automation: !include automations.yaml
+
+input_number: !include input_number.yaml
+
+input_boolean: !include input_boolean.yaml
+
+#input_select: !include input_select.yaml
+
+input_datetime: !include input_datetime.yaml
+
+logger:
+  default: info
+
+python_script:
+
+vacuum: !include vacuum.yaml
+
+recorder:
+  purge_interval: 1
+  purge_keep_days: 7
+
+homematic: !include homematic.yaml
+
+script: !include scripts.yaml

@@ -1,0 +1,14 @@
+ intents:
+   OpenBlinds:
+     - Rolläden öffnen
+   CloseBlinds:
+     - Rolläden schließen
+   StopBlinds:
+     - Rolläden stoppen
+   OpenBlinds2:
+     - Rolladen öffnen
+   CloseBlinds2:
+     - Rolladen schließen
+   StopBlinds2:
+     - Rolladen stoppen
+

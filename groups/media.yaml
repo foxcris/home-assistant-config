@@ -1,0 +1,7 @@
+  media:
+    name: Media
+    view: yes
+    entities:
+      - media_player.samsung_tv_remote
+      - media_player.kodi
+      - media_player.kodi_2
