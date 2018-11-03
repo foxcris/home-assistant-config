@@ -1,0 +1,4 @@
+  - platform: caldav
+    username: !secret caldavuser
+    password: !secret caldavpasswd
+    url: https://nextcloud.volker-boehme.de/remote.php/dav

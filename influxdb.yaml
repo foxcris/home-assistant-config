@@ -1,0 +1,38 @@
+#  host: 127.0.0.1
+#  port: 8086
+#  max_retries: 5
+#  default_measurement: entity_id
+#  tags: 
+#    instance: prod
+#    source: hass
+#  tags_attributes: friendly_name
+#  username: !secret influx_user
+#  password: !secret influx_passwd
+#  database: home_assistant
+#    #host (Optional): IP address of your database host, e.g. 192.168.1.10. Defaults to localhost.
+#    #port (Optional): Port to use. Defaults to 8086.
+#    #username (Optional): The username of the database user. The user needs read/write privileges on the database.
+#    #password (Optional): The password for the database user account.
+#    #database (Optional): Name of the database to use. Defaults to home_assistant. The database must already exist.
+#    #ssl (Optional): Use https instead of http to connect. Defaults to false.
+#    #verify_ssl (Optional): Verify SSL certificate for https request. Defaults to false.
+#    #max_retries (Optional): Allow the component to retry if there was a network error when transmitting data
+#    #retry_queue_limit (Optional): If retry enabled, specify how much calls are allowed to be queued for retry.
+#    #default_measurement (Optional): Measurement name to use when an entity doesn’t have a unit. Defaults to entity id.
+#    #override_measurement (Optional): Measurement name to use instead of unit or default measurement. This will store all data points in a single measurement.
+#    #component_config, component_config_domain, component_config_glob (Optional): These attributes contains component-specific override values. See Customizing devices and services for format.
+#    #    override_measurement (Optional): Measurement name to use for this component, takes precedence over the global ‘override_measurement’ and component-specific ‘unit_of_measurement’ attribute.
+#    #exclude (Optional): Configure which components should be excluded from recording to InfluxDB.
+#    #    entities (Optional): The list of entity ids to be excluded from recording to InfluxDB.
+#    #    domains (Optional): The list of domains to be excluded from recording to InfluxDB.
+#    #include (Optional): Configure which components should be included in recordings to InfluxDB. If set, all other entities will not be recorded to InfluxDB. Values set by the blacklist option will prevail.
+#    #    entities (Optional): The list of entity ids to be included from recordings to InfluxDB.
+#    #    domains (Optional): The list of domains to be included from recordings to InfluxDB.
+#    #tags (Optional): Tags to mark the data.
+#    #tags_attributes (Optional): The list of attribute names which should be reported as tags and not fields to InfluxDB. For example, if set to friendly_name, it will be possible to group by entities’ friendly names as well, in addition to their ids.
+  host: influxdb
+  port: 8086
+  max_retries: 5
+  username: !secret influx_user
+  password: !secret influx_passwd
+  database: home_assistant
