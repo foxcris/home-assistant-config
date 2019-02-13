@@ -1,3 +1,16 @@
+  light_livingroom_dimmed:
+    name: Light Livingroom Dimmed
+    icon: mdi:lightbulb
+  light_livingroom_reading:
+    name: Light Livingroom Reading
+    icon: mdi:lightbulb
+  light_livingroom_cozy:
+    name: Light Livingroom Cozy
+    icon: mdi:lightbulb
+  light_livingroom:
+    name: Lights Livingroom
+    icon: mdi:lightbulb
+
   control_blinds:
     name: Control Blinds
 #    initial: off
@@ -179,4 +192,6 @@
 
   vacuum_enable_global:
     name: Enable automatic vacuum control
-
+  vacuum_roborock_start_cleaning:
+    name: Start Cleaning
+    icon: mdi:play

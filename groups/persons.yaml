@@ -2,8 +2,8 @@
     name: Volker
     view: no
     entities:
-      - device_tracker.motog5plusvolker
-      - device_tracker.vbo_pottern
+      - device_tracker.vbo_hwlya
+      - device_tracker.huaweimate20pro4db642
   person_katrin:
     name: Katrin
     view: no

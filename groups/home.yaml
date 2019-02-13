@@ -14,6 +14,7 @@
       - group.living_room
       - group.marie_room
       - group.lisa_room
+      - group.bath
       - group.parents_bedroom
       - group.guest_room
       - group.balcony_room
@@ -21,6 +22,9 @@
       - group.basement
       - group.basement_stairs
       - group.basement_pantry
+      - group.vacuum_config
+      - group.roborock_vacuum_cleaning
+      - calendar.familie
   climate:
     name: Climate
     view: no

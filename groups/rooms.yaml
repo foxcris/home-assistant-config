@@ -12,6 +12,7 @@
       - group.guest_room
       - group.balcony_room
       - group.roof_bath
+      - group.bath
   kitchen:
     name: Kitchen
     view: no
@@ -38,6 +39,8 @@
       - cover.living_room_door_level
       - climate.livingroomthermostat
       - climate.livingroomwallthermostat
+      - light.fireplace
+      - light.couch
   Basement:
     name: Basement
     view: no
@@ -60,16 +63,18 @@
     view: no
     entities:
       - cover.mariecover
+      - climate.mariethermostat
   Lisa Room:
     name: Lisa Room
     view: no
     entities:
       - cover.lisacover
+      - climate.lisathermostat
   Basement Stairs:
     name: Basement Stairs
     view: no
     entities:
-      - switch.basementstairsdownstairs
+      - switch.basementstairsdownstairs_2
       - sensor.fibaro_system_fgms001zw5_motion_sensor_temperature
       - sensor.fibaro_system_fgms001zw5_motion_sensor_luminance
       - sensor.fibaro_system_fgms001zw5_motion_sensor_general
@@ -85,3 +90,9 @@
     view: no
     entities:
       - cover.parentsbedroom_level
+      - climate.parentsthermostat
+  Bath:
+    name: Bath Room
+    view: no
+    entities:
+      - climate.baththermostat

@@ -3,6 +3,7 @@
     view: yes
     entities:
       - group.roborock_vacuum
+      - group.roborock_vacuum_cleaning
       - group.mi_robot_vacuum
       - group.vacuum_config
 
@@ -10,7 +11,7 @@
     name: Vacuum Config
     view: no
     entities:
-      - input_boolea.vacuum_enable_global
+      - input_boolean.vacuum_enable_global
 
   roborock_vacuum:
     name: Roborock Vacuum
@@ -18,8 +19,16 @@
     entities:
       - vacuum.roborock_vacuum
 
+  roborock_vacuum_cleaning:
+    name: Roborock Vacuum
+    view: no
+    entities:
+      - input_select.vacuum_roborock_rooms
+      - input_boolean.vacuum_roborock_start_cleaning
+
   mi_robot_vacuum:
     name: Mi Robot Vacuum
     view: no
     entities:
       - vacuum.mi_robot_vacuum
+

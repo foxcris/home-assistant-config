@@ -10,6 +10,9 @@ homeassistant:
   unit_system: metric
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/Berlin
+  auth_providers:
+   - type: homeassistant
+   - type: legacy_api_password
 
 # Show links to resources in log and frontend
 #introduction:
@@ -23,8 +26,8 @@ http:
   api_password: !secret http_password
   # Uncomment this if you are using SSL or running in Docker etc
   #base_url: home:8123
-  #ssl_certificate: fullchain.pem
-  #ssl_key: privkey.pem
+  #ssl_certificate: /etc/letsencrypt/live/home.volker-boehme.de/fullchain.pem
+  #ssl_key: /etc/letsencrypt/live/home.volker-boehme.de/privkey.pem
   ip_ban_enabled: True
   login_attempts_threshold: 5
 
@@ -45,6 +48,8 @@ discovery:
 # Enables support for tracking state changes over time.
 history:
 
+#history_graph: !include history_graph.yaml
+
 # View all events in a logbook
 logbook:
 
@@ -55,6 +60,9 @@ map:
 sun:
 
 # Weather Prediction
+weather:
+  - platform: darksky
+    api_key: !secret dark_sky_api_key
 
 sensor: !include sensor.yaml
 binary_sensor: !include binary_sensor.yaml
@@ -63,14 +71,17 @@ binary_sensor: !include binary_sensor.yaml
 tts:
   platform: google
 
-media_player: !include mediaplayer.yaml
+#media_player: !include mediaplayer.yaml
 
 device_tracker: !include devicetracker.yaml
+owntracks: !include owntracks.yaml
 
 zwave:
+  #usb_path: /dev/zwave
   usb_path: /dev/ttyACM0
   device_config: !include zwave_device_config.yaml
   network_key: !secret zwave_network_key
+#  autoheal: false
 
 telegram_bot: !include telegram.yaml
 notify: !include notify.yaml
@@ -120,7 +131,7 @@ input_number: !include input_number.yaml
 
 input_boolean: !include input_boolean.yaml
 
-#input_select: !include input_select.yaml
+input_select: !include input_select.yaml
 
 input_datetime: !include input_datetime.yaml
 
@@ -133,8 +144,22 @@ vacuum: !include vacuum.yaml
 
 recorder:
   purge_interval: 1
-  purge_keep_days: 7
+  purge_keep_days: 10
+  db_url: !secret mariadb
 
 homematic: !include homematic.yaml
 
+influxdb: !include influxdb.yaml
+
 script: !include scripts.yaml
+
+cloud:
+
+calendar: !include calendar.yaml
+
+hue:
+  bridges:
+    - host: 192.168.178.97
+      allow_unreachable: true
+
+system_health:

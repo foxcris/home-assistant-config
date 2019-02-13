@@ -92,3 +92,11 @@
 #      - "23:15"
 #      - "23:30"
 #      - "23:45"
+  vacuum_roborock_rooms:
+    name: "Choose Room for cleaning"
+    icon: mdi:robot-vacuum
+    options:
+      - "Kitchen"
+      - "Living Room"
+      - "Floor and Bath"
+      - "Entire ground floor"
