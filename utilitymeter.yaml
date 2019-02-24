@@ -1,0 +1,7 @@
+  monthly_energy:
+    source: sensor.basementpowermeter_energy_counter
+    cycle: monthly
+  daily_energy:
+    source: sensor.basementpowermeter_energy_counter
+    cycle: daily
+ 
