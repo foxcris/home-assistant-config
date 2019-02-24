@@ -34,11 +34,17 @@ http:
 # Checks for available updates
 updater:
 
+#default config:
+default_config:
+
 # Configuration panel
 config:
 
 # Discover some devices automatically
 discovery:
+
+#person
+person: 
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 #intent_script: !include intent_script.yaml
@@ -138,8 +144,6 @@ input_datetime: !include input_datetime.yaml
 logger:
   default: info
 
-python_script:
-
 vacuum: !include vacuum.yaml
 
 recorder:
@@ -163,3 +167,5 @@ hue:
       allow_unreachable: true
 
 system_health:
+
+utility_meter: !include utilitymeter.yaml

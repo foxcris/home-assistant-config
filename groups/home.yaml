@@ -37,9 +37,8 @@
     name: People
     view: no
     entities:
-      - group.person_volker
-      - group.person_katrin
-      - device_tracker.lgbrigitte
+      - person.volker
+      - person.katrin
   allcovers:
     name: Global Blinds Control
     view: no
@@ -48,4 +47,4 @@
       - input_boolean.control_blinds_enable_pd_global
       - input_boolean.control_blinds_enable_cooldown_during_night_global
       - input_boolean.control_blinds_open_all_blinds_global
-      - input_boolean.control_blinds_close_all_blinds_global    
+      - input_boolean.control_blinds_close_all_blinds_global

@@ -7,7 +7,7 @@
       - pressure
   - platform: fritzbox_callmonitor
     host: 192.168.178.1
-    phonebook: 0 
+    phonebook: 0
   - platform: plex
     host: 192.168.100.30
     username: !secret plex_username
@@ -21,7 +21,6 @@
       - 'time_utc'
 #      - 'beat'
   - platform: fritzbox_netmonitor
-    friendly_name: Fritzbox Status
     host: 192.168.178.1
   - platform: template
     sensors:
@@ -56,7 +55,7 @@
         icon_template: mdi:weather-sunset-down
   - platform: darksky
     api_key: !secret dark_sky_api_key
-    update_interval: '00:15'
+    scan_interval: '00:15'
     forecast: 1
     language: de
     monitored_conditions:
