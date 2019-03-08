@@ -190,8 +190,22 @@
     name: Create new config templates
   ##End## global
 
-  vacuum_enable_global:
+  ##Start## mi_robot_vacuum
+  control_vacuum_mi_robot_vacuum_automatic_control:
+    name: Start vacuum automatically
+    icon: mdi:robot-vacuum
+  ##End## mi_robot_vacuum
+  
+  ##Start## roborock_vacuum
+  control_vacuum_roborock_vacuum_automatic_control:
+    name: Start vacuum automatically
+    icon: mdi:robot-vacuum
+  ##End## roborock_vacuum
+  
+  ##Start## global
+  control_vacuum_enable_global:
     name: Enable automatic vacuum control
-  vacuum_roborock_start_cleaning:
-    name: Start Cleaning
-    icon: mdi:play
+    icon: mdi:robot-vacuum
+  control_vacuum_configuration:
+    name: Create new config templates
+  ##End## global

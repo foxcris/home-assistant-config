@@ -331,3 +331,79 @@
     has_date: False
     has_time: True
   ##End## parentsbedroom_level
+  
+  ##Start## mi_robot_vacuum
+  control_vacuum_mi_robot_vacuum_start_time_monday:
+    name: Starttime on monday
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_vacuum_mi_robot_vacuum_start_time_tuesday:
+    name: Starttime on tuesday
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_vacuum_mi_robot_vacuum_start_time_wednesday:
+    name: Starttime on wednesday
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_vacuum_mi_robot_vacuum_start_time_thursday:
+    name: Starttime on thursday
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_vacuum_mi_robot_vacuum_start_time_friday:
+    name: Starttime on friday
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_vacuum_mi_robot_vacuum_start_time_saturday:
+    name: Starttime on saturday
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_vacuum_mi_robot_vacuum_start_time_sunday:
+    name: Starttime on sunday
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  ##End## mi_robot_vacuum
+  
+  ##Start## roborock_vacuum
+  control_vacuum_roborock_vacuum_start_time_monday:
+    name: Starttime on monday
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_vacuum_roborock_vacuum_start_time_tuesday:
+    name: Starttime on tuesday
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_vacuum_roborock_vacuum_start_time_wednesday:
+    name: Starttime on wednesday
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_vacuum_roborock_vacuum_start_time_thursday:
+    name: Starttime on thursday
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_vacuum_roborock_vacuum_start_time_friday:
+    name: Starttime on friday
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_vacuum_roborock_vacuum_start_time_saturday:
+    name: Starttime on saturday
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_vacuum_roborock_vacuum_start_time_sunday:
+    name: Starttime on sunday
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  ##End## roborock_vacuum

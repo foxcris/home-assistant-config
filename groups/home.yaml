@@ -22,8 +22,6 @@
       - group.basement
       - group.basement_stairs
       - group.basement_pantry
-      - group.vacuum_config
-      - group.roborock_vacuum_cleaning
       - calendar.familie
   climate:
     name: Climate
