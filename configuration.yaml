@@ -89,6 +89,7 @@ zwave:
 #  autoheal: false
 
 telegram_bot: !include telegram.yaml
+matrix: !include matrix.yaml
 notify: !include notify.yaml
 
 group: !include_dir_merge_named groups
