@@ -84,7 +84,7 @@
     name: Basement Pantry
     view: no
     entities:
-      - switch.basementpantry
+      - switch.basementpantry_2
   Parents Bedroom:
     name: Parents Bedroom
     view: no

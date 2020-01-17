@@ -8,10 +8,6 @@
   - platform: fritzbox_callmonitor
     host: 192.168.178.1
     phonebook: 0
-  - platform: plex
-    host: 192.168.100.30
-    username: !secret plex_username
-    password: !secret plex_password
   - platform: time_date
     display_options:
       - 'time'

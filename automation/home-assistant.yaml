@@ -3,15 +3,22 @@
       - platform: state
         entity_id: updater.updater
     action:
-      service: notify.telegram
-      data:
-        message: 'There is a new Home Assistant release available. {{ states.updater.updater.state }}'
+      - service: notify.telegram
+        data:
+          message: 'There is a new Home Assistant release available. {{ states.updater.updater.state }}'
+      - service: notify.matrix
+        data:
+          message: 'There is a new Home Assistant release available. {{ states.updater.updater.state }}'
   - alias: "Startup Notification"
     trigger:
       platform: homeassistant
       event: start
     action:
-      service: notify.telegram
-      data:
-        title: "Warning"
-        message: "Home Assistant restarted"
+      - service: notify.telegram
+        data:
+          title: "Warning"
+          message: "Home Assistant restarted"
+      - service: notify.matrix
+        data:
+          title: "Warning"
+          message: "Home Assistant restarted"

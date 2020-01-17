@@ -13,6 +13,7 @@ homeassistant:
   auth_providers:
    - type: homeassistant
    - type: legacy_api_password
+     api_password: !secret http_password
 
 # Show links to resources in log and frontend
 #introduction:
@@ -22,8 +23,6 @@ frontend:
 
 http:
   server_port: 8123
-  # Uncomment this to add a password (recommended!)
-  api_password: !secret http_password
   # Uncomment this if you are using SSL or running in Docker etc
   #base_url: home:8123
   #ssl_certificate: /etc/letsencrypt/live/home.volker-boehme.de/fullchain.pem
@@ -73,12 +72,6 @@ weather:
 sensor: !include sensor.yaml
 binary_sensor: !include binary_sensor.yaml
 
-# Text to speech
-tts:
-  platform: google
-
-#media_player: !include mediaplayer.yaml
-
 device_tracker: !include devicetracker.yaml
 owntracks: !include owntracks.yaml
 
@@ -90,6 +83,7 @@ zwave:
 #  autoheal: false
 
 telegram_bot: !include telegram.yaml
+matrix: !include matrix.yaml
 notify: !include notify.yaml
 
 group: !include_dir_merge_named groups
@@ -137,7 +131,7 @@ input_number: !include input_number.yaml
 
 input_boolean: !include input_boolean.yaml
 
-input_select: !include input_select.yaml
+#input_select: !include input_select.yaml
 
 input_datetime: !include input_datetime.yaml
 
@@ -165,6 +159,7 @@ hue:
   bridges:
     - host: 192.168.178.97
       allow_unreachable: true
+      allow_hue_groups: false
 
 system_health:
 
