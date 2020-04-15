@@ -1,19 +1,16 @@
   vacuum_cleaners:
     name: Vacuum
-    view: yes
     entities:
       - group.roborock_vacuum
       - group.mi_robot_vacuum
 
   roborock_vacuum:
     name: Roborock Vacuum
-    view: no
     entities:
       - vacuum.roborock_vacuum
 
   mi_robot_vacuum:
     name: Mi Robot Vacuum
-    view: no
     entities:
       - vacuum.mi_robot_vacuum
 

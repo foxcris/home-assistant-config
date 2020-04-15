@@ -1,6 +1,5 @@
   datetime:
     name: Date and Time
-    view: no
     entities:
       - sensor.date
       - sensor.time

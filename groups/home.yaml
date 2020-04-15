@@ -1,6 +1,5 @@
   default_view:
     name: Home
-    view: yes
     entities:
       - group.datetime
       - group.climate
@@ -25,7 +24,6 @@
       - calendar.familie
   climate:
     name: Climate
-    view: no
     entities:
       - sensor.yr_symbol
       - sensor.yr_temperature
@@ -33,13 +31,11 @@
       - sensor.sun_next_setting
   people:
     name: People
-    view: no
     entities:
       - person.volker
       - person.katrin
   allcovers:
     name: Global Blinds Control
-    view: no
     entities:
       - input_boolean.control_blinds_enable_global
       - input_boolean.control_blinds_enable_pd_global

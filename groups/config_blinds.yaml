@@ -1,7 +1,6 @@
 ##Start## lisacover
 config_blinds_lisacover:
   name: Config Blinds lisacover
-  view: no
   entities:
     - input_boolean.control_blinds_lisacover_use_pd_on_close
     - input_boolean.control_blinds_lisacover_openblinds
@@ -22,7 +21,6 @@ config_blinds_lisacover:
 ##Start## mariecover
 config_blinds_mariecover:
   name: Config Blinds mariecover
-  view: no
   entities:
     - input_boolean.control_blinds_mariecover_use_pd_on_close
     - input_boolean.control_blinds_mariecover_openblinds
@@ -43,7 +41,6 @@ config_blinds_mariecover:
 ##Start## kitchen_level
 config_blinds_kitchen_level:
   name: Config Blinds kitchen_level
-  view: no
   entities:
     - input_boolean.control_blinds_kitchen_level_use_pd_on_close
     - input_boolean.control_blinds_kitchen_level_openblinds
@@ -64,7 +61,6 @@ config_blinds_kitchen_level:
 ##Start## guest_room_level
 config_blinds_guest_room_level:
   name: Config Blinds guest_room_level
-  view: no
   entities:
     - input_boolean.control_blinds_guest_room_level_use_pd_on_close
     - input_boolean.control_blinds_guest_room_level_openblinds
@@ -85,7 +81,6 @@ config_blinds_guest_room_level:
 ##Start## living_room_window_level
 config_blinds_living_room_window_level:
   name: Config Blinds living_room_window_level
-  view: no
   entities:
     - input_boolean.control_blinds_living_room_window_level_use_pd_on_close
     - input_boolean.control_blinds_living_room_window_level_openblinds
@@ -106,7 +101,6 @@ config_blinds_living_room_window_level:
 ##Start## living_room_door_level
 config_blinds_living_room_door_level:
   name: Config Blinds living_room_door_level
-  view: no
   entities:
     - input_boolean.control_blinds_living_room_door_level_use_pd_on_close
     - input_boolean.control_blinds_living_room_door_level_openblinds
@@ -127,7 +121,6 @@ config_blinds_living_room_door_level:
 ##Start## parentsbedroom_level
 config_blinds_parentsbedroom_level:
   name: Config Blinds parentsbedroom_level
-  view: no
   entities:
     - input_boolean.control_blinds_parentsbedroom_level_use_pd_on_close
     - input_boolean.control_blinds_parentsbedroom_level_openblinds
@@ -148,7 +141,6 @@ config_blinds_parentsbedroom_level:
 ##Start## global
 config_blinds_global:
   name: Config Blinds global
-  view: no
   entities:
     - input_boolean.control_blinds_enable_global
     - input_boolean.control_blinds_enable_pd_global
@@ -161,7 +153,6 @@ config_blinds_global:
 ##Start## config_blinds
 config_blinds:
   name: Config Blinds
-  view: yes
   entities:
     - group.config_blinds_lisacover
     - group.config_blinds_mariecover

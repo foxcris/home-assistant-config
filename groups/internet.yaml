@@ -1,6 +1,5 @@
   internet:
     name: Internet
-    view: no
     entities:
       - sensor.fritz_netmonitor
       - sensor.fritz_netmonitor_external_ip

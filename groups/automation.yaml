@@ -1,6 +1,5 @@
   automation:
     name: Automation
-    view: yes
     entities:
       - automation.close_blind_after_sunset
       - automation.presence_detection_home

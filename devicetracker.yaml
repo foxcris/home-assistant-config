@@ -2,6 +2,15 @@
     host: 192.168.178.1
     username: !secret fritzbox_username
     password: !secret fritzbox_password
+  - platform: luci
+    host: 192.168.100.1
+    username: !secret openwrt1_username
+    password: !secret openwrt1_password
+  - platform: luci
+    host: 192.168.100.2
+    username: !secret openwrt2_username
+    password: !secret openwrt2_password
+
 #  - platform: nmap_tracker
 #    hosts: 192.168.178.1/24
 #    home_interval: 5

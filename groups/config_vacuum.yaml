@@ -1,7 +1,6 @@
 ##Start## mi_robot_vacuum
 config_vacuum_mi_robot_vacuum:
   name: Config vacuum mi_robot_vacuum
-  view: no
   entities:
     - input_boolean.control_vacuum_mi_robot_vacuum_automatic_control
     - input_datetime.control_vacuum_mi_robot_vacuum_start_time_monday
@@ -16,7 +15,6 @@ config_vacuum_mi_robot_vacuum:
 ##Start## roborock_vacuum
 config_vacuum_roborock_vacuum:
   name: Config vacuum roborock_vacuum
-  view: no
   entities:
     - input_boolean.control_vacuum_roborock_vacuum_automatic_control
     - input_datetime.control_vacuum_roborock_vacuum_start_time_monday
@@ -31,7 +29,6 @@ config_vacuum_roborock_vacuum:
 ##Start## global
 config_vacuum_global:
   name: Config vacuum global
-  view: no
   entities:
     - input_boolean.control_vacuum_enable_global
     - input_boolean.control_vacuum_configuration
@@ -40,7 +37,6 @@ config_vacuum_global:
 ##Start## config_vacuum
 config_vacuum:
   name: Config Vacuum
-  view: yes
   entities:
     - group.config_vacuum_mi_robot_vacuum
     - group.config_vacuum_roborock_vacuum
