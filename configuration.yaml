@@ -93,36 +93,7 @@ panel_iframe: !include paneliframe.yaml
 mqtt: !include mqtt.yaml
 
 # This will override the default home zone
-zone:
-  name: Home
-  latitude: !secret home_latitude
-  longitude: !secret home_longitude
-  radius: 100
-  icon: mdi:home
-
-zone 2:
-  name: Work Volker
-  latitude: !secret work_volker_latitude
-  longitude: !secret work_volker_longitude
-  icon: mdi:domain
-
-zone 3:
-  name: Parents Volker
-  latitude: !secret parents_volker_latitude
-  longitude: !secret parents_volker_longitude
-  icon: mdi:home-outline
-
-zone 4:
-  name: Work Katrin
-  latitude: !secret work_katrin_latitude
-  longitude: !secret work_katrin_longitude
-  icon: mdi:domain
-
-zone 5:
-  name: Parents Katrin
-  latitude: !secret parents_katrin_latitude
-  longitude: !secret parents_katrin_longitude
-  icon: mdi:home-outline
+zone: !include zone.yaml
 
 automation old: !include_dir_merge_list automation
 automation: !include automations.yaml
@@ -164,3 +135,5 @@ hue:
 system_health:
 
 utility_meter: !include utilitymeter.yaml
+
+media_player: !include mediaplayer.yaml

@@ -1,0 +1,21 @@
+  - name: Home
+    latitude: !secret home_latitude
+    longitude: !secret home_longitude
+    radius: 100
+    icon: mdi:home
+
+  - name: Parents Volker
+    latitude: !secret parents_volker_latitude
+    longitude: !secret parents_volker_longitude
+    icon: mdi:home-outline
+
+  - name: Work
+    latitude: !secret work_katrin_latitude
+    longitude: !secret work_katrin_longitude
+    icon: mdi:domain
+
+  - name: Parents Katrin
+    latitude: !secret parents_katrin_latitude
+    longitude: !secret parents_katrin_longitude
+    icon: mdi:home-outline
+
