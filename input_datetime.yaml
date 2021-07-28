@@ -1,36 +1,3 @@
-  earliest_time_blinds_up_sun:
-    name: "Earliest time to open blinds"
-    has_date: false
-    has_time: true
-  latest_time_blinds_down_sun:
-    name: "Latest time to close blinds"
-    has_date: false
-    has_time: true
-  time_blinds_up:
-    name: "Time to open blinds"
-    has_date: false
-    has_time: true
-  time_blinds_down:
-    name: "Time to close blinds"
-    has_date: false
-    has_time: true
-  offset_blinds_down_after_sunset:
-    name: "Offset for closing blinds after sunset"
-    has_date: false
-    has_time: true
-  offset_blinds_up_weekend:
-    name: "Offset for open blinds at Weekends/Hollidays"
-    has_date: false
-    has_time: true
-  cooldown_night_up:
-    name: "Time to open blinds for cool down"
-    has_date: false
-    has_time: true
-  cooldown_night_down:
-    name: "Time to close blinds for cool down"
-    has_date: false
-    has_time: true
-
   ##Start## mariecover
   control_blinds_mariecover_offset_blinds_up_weekend:
     name: Offset for open blinds at Weekends
@@ -73,7 +40,7 @@
     has_date: False
     has_time: True
   ##End## mariecover
-
+  
   ##Start## lisacover
   control_blinds_lisacover_offset_blinds_up_weekend:
     name: Offset for open blinds at Weekends
@@ -116,136 +83,7 @@
     has_date: False
     has_time: True
   ##End## lisacover
-
-  ##Start## kitchen_level
-  control_blinds_kitchen_level_offset_blinds_up_weekend:
-    name: Offset for open blinds at Weekends
-    icon: mdi:timelapse
-    has_date: False
-    has_time: True
-  control_blinds_kitchen_level_cooldown_during_night_open:
-    name: Time to open blinds during night for cool down
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_kitchen_level_cooldown_during_night_close:
-    name: Time to close blinds during night for cool down
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_kitchen_level_earliest_time_blinds_up:
-    name: Earliest time to open blinds. Delay if sunrise is before this time.
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_kitchen_level_latest_time_blinds_down:
-    name: Latest time to close blinds. Move close blinds to this time if sunset is after this time.
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_kitchen_level_offset_blinds_down_after_sunset:
-    name: Offset to add to sunset time.
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_kitchen_level_openblinds_on_time:
-    name: Time to open blinds
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_kitchen_level_closeblinds_on_time:
-    name: Time to close blinds
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  ##End## kitchen_level
-
-  ##Start## guest_room_level
-  control_blinds_guest_room_level_offset_blinds_up_weekend:
-    name: Offset for open blinds at Weekends
-    icon: mdi:timelapse
-    has_date: False
-    has_time: True
-  control_blinds_guest_room_level_cooldown_during_night_open:
-    name: Time to open blinds during night for cool down
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_guest_room_level_cooldown_during_night_close:
-    name: Time to close blinds during night for cool down
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_guest_room_level_earliest_time_blinds_up:
-    name: Earliest time to open blinds. Delay if sunrise is before this time.
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_guest_room_level_latest_time_blinds_down:
-    name: Latest time to close blinds. Move close blinds to this time if sunset is after this time.
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_guest_room_level_offset_blinds_down_after_sunset:
-    name: Offset to add to sunset time.
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_guest_room_level_openblinds_on_time:
-    name: Time to open blinds
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_guest_room_level_closeblinds_on_time:
-    name: Time to close blinds
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  ##End## guest_room_level
-
-  ##Start## living_room_window_level
-  control_blinds_living_room_window_level_offset_blinds_up_weekend:
-    name: Offset for open blinds at Weekends
-    icon: mdi:timelapse
-    has_date: False
-    has_time: True
-  control_blinds_living_room_window_level_cooldown_during_night_open:
-    name: Time to open blinds during night for cool down
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_living_room_window_level_cooldown_during_night_close:
-    name: Time to close blinds during night for cool down
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_living_room_window_level_earliest_time_blinds_up:
-    name: Earliest time to open blinds. Delay if sunrise is before this time.
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_living_room_window_level_latest_time_blinds_down:
-    name: Latest time to close blinds. Move close blinds to this time if sunset is after this time.
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_living_room_window_level_offset_blinds_down_after_sunset:
-    name: Offset to add to sunset time.
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_living_room_window_level_openblinds_on_time:
-    name: Time to open blinds
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  control_blinds_living_room_window_level_closeblinds_on_time:
-    name: Time to close blinds
-    icon: mdi:clock-outline
-    has_date: False
-    has_time: True
-  ##End## living_room_window_level
-
+  
   ##Start## living_room_door_level
   control_blinds_living_room_door_level_offset_blinds_up_weekend:
     name: Offset for open blinds at Weekends
@@ -288,7 +126,50 @@
     has_date: False
     has_time: True
   ##End## living_room_door_level
-
+  
+  ##Start## kitchen_level
+  control_blinds_kitchen_level_offset_blinds_up_weekend:
+    name: Offset for open blinds at Weekends
+    icon: mdi:timelapse
+    has_date: False
+    has_time: True
+  control_blinds_kitchen_level_cooldown_during_night_open:
+    name: Time to open blinds during night for cool down
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_kitchen_level_cooldown_during_night_close:
+    name: Time to close blinds during night for cool down
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_kitchen_level_earliest_time_blinds_up:
+    name: Earliest time to open blinds. Delay if sunrise is before this time.
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_kitchen_level_latest_time_blinds_down:
+    name: Latest time to close blinds. Move close blinds to this time if sunset is after this time.
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_kitchen_level_offset_blinds_down_after_sunset:
+    name: Offset to add to sunset time.
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_kitchen_level_openblinds_on_time:
+    name: Time to open blinds
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_kitchen_level_closeblinds_on_time:
+    name: Time to close blinds
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  ##End## kitchen_level
+  
   ##Start## parentsbedroom_level
   control_blinds_parentsbedroom_level_offset_blinds_up_weekend:
     name: Offset for open blinds at Weekends
@@ -332,6 +213,92 @@
     has_time: True
   ##End## parentsbedroom_level
   
+  ##Start## living_room_window_level
+  control_blinds_living_room_window_level_offset_blinds_up_weekend:
+    name: Offset for open blinds at Weekends
+    icon: mdi:timelapse
+    has_date: False
+    has_time: True
+  control_blinds_living_room_window_level_cooldown_during_night_open:
+    name: Time to open blinds during night for cool down
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_living_room_window_level_cooldown_during_night_close:
+    name: Time to close blinds during night for cool down
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_living_room_window_level_earliest_time_blinds_up:
+    name: Earliest time to open blinds. Delay if sunrise is before this time.
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_living_room_window_level_latest_time_blinds_down:
+    name: Latest time to close blinds. Move close blinds to this time if sunset is after this time.
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_living_room_window_level_offset_blinds_down_after_sunset:
+    name: Offset to add to sunset time.
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_living_room_window_level_openblinds_on_time:
+    name: Time to open blinds
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_living_room_window_level_closeblinds_on_time:
+    name: Time to close blinds
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  ##End## living_room_window_level
+  
+  ##Start## guest_room_level
+  control_blinds_guest_room_level_offset_blinds_up_weekend:
+    name: Offset for open blinds at Weekends
+    icon: mdi:timelapse
+    has_date: False
+    has_time: True
+  control_blinds_guest_room_level_cooldown_during_night_open:
+    name: Time to open blinds during night for cool down
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_guest_room_level_cooldown_during_night_close:
+    name: Time to close blinds during night for cool down
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_guest_room_level_earliest_time_blinds_up:
+    name: Earliest time to open blinds. Delay if sunrise is before this time.
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_guest_room_level_latest_time_blinds_down:
+    name: Latest time to close blinds. Move close blinds to this time if sunset is after this time.
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_guest_room_level_offset_blinds_down_after_sunset:
+    name: Offset to add to sunset time.
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_guest_room_level_openblinds_on_time:
+    name: Time to open blinds
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  control_blinds_guest_room_level_closeblinds_on_time:
+    name: Time to close blinds
+    icon: mdi:clock-outline
+    has_date: False
+    has_time: True
+  ##End## guest_room_level
+
   ##Start## mi_robot_vacuum
   control_vacuum_mi_robot_vacuum_start_time_monday:
     name: Starttime on monday

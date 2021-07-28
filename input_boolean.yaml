@@ -11,39 +11,6 @@
     name: Lights Livingroom
     icon: mdi:lightbulb
 
-  control_blinds:
-    name: Control Blinds
-#    initial: off
-    icon: mdi:blinds
-  control_blinds_sun:
-    name: Control blinds according to sunrise/sunset
-#    initial: on
-    icon: mdi:blinds
-  control_blinds_presence:
-    name: Only close blinds automatically if nobody is home
-    icon: mdi:blinds
-  control_blinds_cooldown_night:
-    name: Open blinds during night to cool down
-    icon: mdi:blinds
-  control_blinds_kitchen:
-    name: Control blinds in the kitchen
-#    initial: on
-    icon: mdi:blinds
-  control_blinds_guest_room:
-    name: Control blinds in the guest room
-#    initial: on
-    icon: mdi:blinds
-  control_blinds_living_room:
-    name: Control blinds in the living room
-#    initial: on
-    icon: mdi:blinds
-  open_all_blinds:
-    name: Open all blinds
-    icon: mdi:blinds
-  close_all_blinds:
-    name: Close all blinds
-    icon: mdi:blinds
-
   ##Start## mariecover
   control_blinds_mariecover_use_pd_on_close:
     name: Only close blinds automatically if nobody is home
@@ -80,6 +47,24 @@
     icon: mdi:white-balance-sunny
   ##End## lisacover
 
+  ##Start## living_room_door_level
+  control_blinds_living_room_door_level_use_pd_on_close:
+    name: Only close blinds automatically if nobody is home
+    icon: mdi:account-multiple
+  control_blinds_living_room_door_level_openblinds:
+    name: Open blinds automatically
+    icon: mdi:blinds
+  control_blinds_living_room_door_level_closeblinds:
+    name: Close blinds automatically
+    icon: mdi:blinds
+  control_blinds_living_room_door_level_cooldown_during_night:
+    name: Openblinds during night to cool down
+    icon: mdi:weather-night
+  control_blinds_living_room_door_level_sunsetsunrise:
+    name: Control blinds according to sunrise/sunset
+    icon: mdi:white-balance-sunny
+  ##End## living_room_door_level
+
   ##Start## kitchen_level
   control_blinds_kitchen_level_use_pd_on_close:
     name: Only close blinds automatically if nobody is home
@@ -98,23 +83,23 @@
     icon: mdi:white-balance-sunny
   ##End## kitchen_level
 
-  ##Start## guest_room_level
-  control_blinds_guest_room_level_use_pd_on_close:
+  ##Start## parentsbedroom_level
+  control_blinds_parentsbedroom_level_use_pd_on_close:
     name: Only close blinds automatically if nobody is home
     icon: mdi:account-multiple
-  control_blinds_guest_room_level_openblinds:
+  control_blinds_parentsbedroom_level_openblinds:
     name: Open blinds automatically
     icon: mdi:blinds
-  control_blinds_guest_room_level_closeblinds:
+  control_blinds_parentsbedroom_level_closeblinds:
     name: Close blinds automatically
     icon: mdi:blinds
-  control_blinds_guest_room_level_cooldown_during_night:
+  control_blinds_parentsbedroom_level_cooldown_during_night:
     name: Openblinds during night to cool down
     icon: mdi:weather-night
-  control_blinds_guest_room_level_sunsetsunrise:
+  control_blinds_parentsbedroom_level_sunsetsunrise:
     name: Control blinds according to sunrise/sunset
     icon: mdi:white-balance-sunny
-  ##End## guest_room_level
+  ##End## parentsbedroom_level
 
   ##Start## living_room_window_level
   control_blinds_living_room_window_level_use_pd_on_close:
@@ -134,41 +119,23 @@
     icon: mdi:white-balance-sunny
   ##End## living_room_window_level
 
-  ##Start## living_room_door_level
-  control_blinds_living_room_door_level_use_pd_on_close:
+  ##Start## guest_room_level
+  control_blinds_guest_room_level_use_pd_on_close:
     name: Only close blinds automatically if nobody is home
     icon: mdi:account-multiple
-  control_blinds_living_room_door_level_openblinds:
+  control_blinds_guest_room_level_openblinds:
     name: Open blinds automatically
     icon: mdi:blinds
-  control_blinds_living_room_door_level_closeblinds:
+  control_blinds_guest_room_level_closeblinds:
     name: Close blinds automatically
     icon: mdi:blinds
-  control_blinds_living_room_door_level_cooldown_during_night:
+  control_blinds_guest_room_level_cooldown_during_night:
     name: Openblinds during night to cool down
     icon: mdi:weather-night
-  control_blinds_living_room_door_level_sunsetsunrise:
+  control_blinds_guest_room_level_sunsetsunrise:
     name: Control blinds according to sunrise/sunset
     icon: mdi:white-balance-sunny
-  ##End## living_room_door_level
-
-  ##Start## parentsbedroom_level
-  control_blinds_parentsbedroom_level_use_pd_on_close:
-    name: Only close blinds automatically if nobody is home
-    icon: mdi:account-multiple
-  control_blinds_parentsbedroom_level_openblinds:
-    name: Open blinds automatically
-    icon: mdi:blinds
-  control_blinds_parentsbedroom_level_closeblinds:
-    name: Close blinds automatically
-    icon: mdi:blinds
-  control_blinds_parentsbedroom_level_cooldown_during_night:
-    name: Openblinds during night to cool down
-    icon: mdi:weather-night
-  control_blinds_parentsbedroom_level_sunsetsunrise:
-    name: Control blinds according to sunrise/sunset
-    icon: mdi:white-balance-sunny
-  ##End## parentsbedroom_level
+  ##End## guest_room_level
 
   ##Start## global
   control_blinds_enable_global:

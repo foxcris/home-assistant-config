@@ -1,0 +1,66 @@
+- id: '1603645070304'
+  alias: BasementPantry Lights Off
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.basementpantry_2
+    from: 'on'
+    to: 'off'
+    for: '1'
+  condition: []
+  action:
+  - service: switch.turn_off
+    data: {}
+    entity_id: switch.basementstairsdownstairs_2
+  mode: single
+- id: '1603645127111'
+  alias: BasementStairsDownStairs Lights Off
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.basementstairsdownstairs_2
+    from: 'on'
+    to: 'off'
+    for: '1'
+  condition: []
+  action:
+  - service: switch.turn_off
+    data: {}
+    entity_id: switch.basementpantry_2
+  mode: single
+- id: '1603653395008'
+  alias: BasementPantry Lights On
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.basementpantry_2
+    from: 'off'
+    to: 'on'
+    for: '1'
+  condition:
+  - condition: state
+    entity_id: switch.basementstairsdownstairs_2
+    state: 'off'
+  action:
+  - service: switch.turn_on
+    data: {}
+    entity_id: switch.basementstairsdownstairs_2
+  mode: single
+- id: '1603653438523'
+  alias: BasementStairsDownStairs Lights On
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.basementstairsdownstairs_2
+    from: 'off'
+    to: 'on'
+    for: '1'
+  condition:
+  - condition: state
+    entity_id: switch.basementpantry_2
+    state: 'off'
+  action:
+  - service: switch.turn_on
+    data: {}
+    entity_id: switch.basementpantry_2
+  mode: single

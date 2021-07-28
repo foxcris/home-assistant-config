@@ -1,15 +1,13 @@
-  - platform: fritz
-    host: 192.168.178.1
-    username: !secret fritzbox_username
-    password: !secret fritzbox_password
+#  - platform: fritz
+#    host: 192.168.178.1
+#    username: !secret fritzbox_username
+#    password: !secret fritzbox_password
   - platform: luci
-    host: 192.168.100.1
+    host: 192.168.3.1
     username: !secret openwrt1_username
     password: !secret openwrt1_password
-  - platform: luci
-    host: 192.168.100.2
-    username: !secret openwrt2_username
-    password: !secret openwrt2_password
+    ssl: true
+    verify_ssl: false
 
 #  - platform: nmap_tracker
 #    hosts: 192.168.178.1/24
