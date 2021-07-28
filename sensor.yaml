@@ -1,10 +1,3 @@
-  - platform: yr
-    monitored_conditions:
-      - symbol
-      - temperature
-      - humidity
-      - windSpeed
-      - pressure
   - platform: fritzbox_callmonitor
     host: 192.168.178.1
     phonebook: 0
@@ -22,30 +15,25 @@
     sensors:
       fritz_netmonitor_transmission_rate_down:
         friendly_name: Transmission Rate Down
-        entity_id: sensor.fritz_netmonitor
         value_template: >
                           {{ '%.2f' | format(states.sensor.fritz_netmonitor.attributes.transmission_rate_down | float / 1024)}}
         unit_of_measurement: 'kB/s'
       fritz_netmonitor_transmission_rate_up:
         friendly_name: Transmission Rate Up
-        entity_id: sensor.fritz_netmonitor
         value_template: >
                           {{ '%.2f' | format(states.sensor.fritz_netmonitor.attributes.transmission_rate_up | float / 1024) }}
         unit_of_measurement: 'kB/s'
       fritz_netmonitor_external_ip:
         friendly_name: External IP
-        entity_id: sensor.fritz_netmonitor
         value_template: >
                           {{ states.sensor.fritz_netmonitor.attributes.external_ip }}
       sun_next_rising:
         friendly_name: Sun Next Rising
-        entity_id: sun.sun
         value_template: >
                           {{ as_timestamp(states.sun.sun.attributes.next_rising) | timestamp_local }}
         icon_template: mdi:weather-sunset-up
       sun_next_setting:
         friendly_name: Sun Next Setting
-        entity_id: sun.sun
         value_template: >
                           {{ as_timestamp(states.sun.sun.attributes.next_setting) | timestamp_local }}
         icon_template: mdi:weather-sunset-down
@@ -81,3 +69,19 @@
       - uv_index
       - moon_phase
       - icon
+  - platform: systemmonitor
+    resources:
+      - type: memory_free
+      - type: memory_use
+      - type: load_1m
+      - type: load_5m
+      - type: load_15m
+      - type: processor_use
+      - type: last_boot
+      - type: network_in
+        arg: lo
+      - type: network_in
+        arg: eth0
+  - platform: dwd_weather_warnings
+    region_name: Stadt Pulheim
+

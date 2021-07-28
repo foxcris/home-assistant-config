@@ -1,8 +1,8 @@
   vacuum_cleaners:
     name: Vacuum
     entities:
-      - group.roborock_vacuum
-      - group.mi_robot_vacuum
+      - vacuum.roborock_vacuum
+      - vacuum.mi_robot_vacuum
 
   roborock_vacuum:
     name: Roborock Vacuum

@@ -4,8 +4,6 @@
       - group.datetime
       - group.climate
       - group.people
-      - group.global
-      - group.xiaomi_vacuum
       - group.internet
       - group.allcovers
       - group.kitchen

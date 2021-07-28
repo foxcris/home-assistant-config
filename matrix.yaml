@@ -1,5 +1,5 @@
 
-homeserver: https://matrix.volker-boehme.de
+homeserver: https://matrix.boehme.cologne
 username: !secret matrix_user
 password: !secret matrix_passwd
 rooms:
