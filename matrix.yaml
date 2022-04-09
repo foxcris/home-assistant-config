@@ -1,9 +1,9 @@
 
-homeserver: https://matrix.boehme.cologne
-username: !secret matrix_user
-password: !secret matrix_passwd
-rooms:
-  - !secret matrix_room
-commands:
-  - expression: "(?P<generic_command>#[^?]*)(?P<generic_data>[?].*)*"
-    name: generic_command
+#homeserver: https://matrix.boehme.cologne
+#username: !secret matrix_user
+#password: !secret matrix_passwd
+#rooms:
+#  - !secret matrix_room
+#commands:
+#  - expression: "(?P<generic_command>#[^?]*)(?P<generic_data>[?].*)*"
+#    name: generic_command

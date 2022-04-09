@@ -1,11 +1,41 @@
   interfaces:
-    pigear:
-      host: 192.168.100.17
+#    pigear:
+#      host: 192.168.100.17
+#      port: 2001
+#      #port: 2003
+#      username: !secret homegearuser
+#      password: !secret homegearpasswd
+#      resolvenames: metadata
+#      callback_ip: 192.168.100.19
+#      callback_port: 49018
+    rf:
+      host: ccu
+      resolvenames: "json"
+      username: !secret raspberrymaticuser
+      password: !secret raspberrymaticpasswd
+    wired:
+      host: ccu
+      port: 2000
+      resolvenames: "json"
+      username: !secret raspberrymaticuser
+      password: !secret raspberrymaticpasswd
+    ip:
+      host: ccu
+      port: 2010
+      resolvenames: "json"
+      username: !secret raspberrymaticuser
+      password: !secret raspberrymaticpasswd
+    groups:
+      host: ccu
+      port: 9292
+      resolvenames: "json"
+      username: !secret raspberrymaticuser
+      password: !secret raspberrymaticpasswd
+      path: /groups
+  hosts:
+    raspberrymatic:
+      host: ccu
       port: 2001
-      #port: 2003
-      username: !secret homegearuser
-      password: !secret homegearpasswd
-      resolvenames: metadata
-      callback_ip: 192.168.100.19
-      callback_port: 49018
+      username: !secret raspberrymaticuser
+      password: !secret raspberrymaticpasswd
   local_port: 49018

@@ -16,47 +16,47 @@
     icon: mdi:blinds
   ##End## lisacover
   
-  ##Start## living_room_door_level
-  control_blinds_living_room_door_level_cooldown_night_blinds_position:
+  ##Start## living_room_door
+  control_blinds_living_room_door_cooldown_night_blinds_position:
     name: Position of blinds during cool down
     min: 0
     max: 100
     step: 1
     icon: mdi:blinds
-  ##End## living_room_door_level
-  
-  ##Start## kitchen_level
-  control_blinds_kitchen_level_cooldown_night_blinds_position:
+  ##End## living_room_door
+
+  ##Start## kitchen
+  control_blinds_kitchen_cooldown_night_blinds_position:
     name: Position of blinds during cool down
     min: 0
     max: 100
     step: 1
     icon: mdi:blinds
-  ##End## kitchen_level
-  
-  ##Start## parentsbedroom_level
-  control_blinds_parentsbedroom_level_cooldown_night_blinds_position:
+  ##End## kitchen
+
+  ##Start## living_room_window
+  control_blinds_living_room_window_cooldown_night_blinds_position:
     name: Position of blinds during cool down
     min: 0
     max: 100
     step: 1
     icon: mdi:blinds
-  ##End## parentsbedroom_level
-  
-  ##Start## living_room_window_level
-  control_blinds_living_room_window_level_cooldown_night_blinds_position:
+  ##End## living_room_window
+
+  ##Start## parentsbedroom
+  control_blinds_parentsbedroom_cooldown_night_blinds_position:
     name: Position of blinds during cool down
     min: 0
     max: 100
     step: 1
     icon: mdi:blinds
-  ##End## living_room_window_level
-  
-  ##Start## guest_room_level
-  control_blinds_guest_room_level_cooldown_night_blinds_position:
+  ##End## parentsbedroom
+
+  ##Start## guest_room
+  control_blinds_guest_room_cooldown_night_blinds_position:
     name: Position of blinds during cool down
     min: 0
     max: 100
     step: 1
     icon: mdi:blinds
-  ##End## guest_room_level
+  ##End## guest_room

@@ -1,6 +1,6 @@
   - name: telegram
     platform: telegram
     chat_id: !secret telegram_chat_id
-  - name: matrix
-    platform: matrix
-    default_room: !secret matrix_room
+#  - name: matrix
+#    platform: matrix
+#    default_room: !secret matrix_room

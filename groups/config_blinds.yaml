@@ -38,105 +38,105 @@ config_blinds_lisacover:
     - input_number.control_blinds_lisacover_cooldown_night_blinds_position
 ##End## lisacover
 
-##Start## living_room_door_level
-config_blinds_living_room_door_level:
-  name: Config Blinds living_room_door_level
+##Start## living_room_door
+config_blinds_living_room_door:
+  name: Config Blinds living_room_door
   entities:
-    - input_boolean.control_blinds_living_room_door_level_use_pd_on_close
-    - input_boolean.control_blinds_living_room_door_level_openblinds
-    - input_boolean.control_blinds_living_room_door_level_closeblinds
-    - input_boolean.control_blinds_living_room_door_level_cooldown_during_night
-    - input_boolean.control_blinds_living_room_door_level_sunsetsunrise
-    - input_datetime.control_blinds_living_room_door_level_offset_blinds_up_weekend
-    - input_datetime.control_blinds_living_room_door_level_cooldown_during_night_open
-    - input_datetime.control_blinds_living_room_door_level_cooldown_during_night_close
-    - input_datetime.control_blinds_living_room_door_level_earliest_time_blinds_up
-    - input_datetime.control_blinds_living_room_door_level_latest_time_blinds_down
-    - input_datetime.control_blinds_living_room_door_level_offset_blinds_down_after_sunset
-    - input_datetime.control_blinds_living_room_door_level_openblinds_on_time
-    - input_datetime.control_blinds_living_room_door_level_closeblinds_on_time
-    - input_number.control_blinds_living_room_door_level_cooldown_night_blinds_position
-##End## living_room_door_level
+    - input_boolean.control_blinds_living_room_door_use_pd_on_close
+    - input_boolean.control_blinds_living_room_door_openblinds
+    - input_boolean.control_blinds_living_room_door_closeblinds
+    - input_boolean.control_blinds_living_room_door_cooldown_during_night
+    - input_boolean.control_blinds_living_room_door_sunsetsunrise
+    - input_datetime.control_blinds_living_room_door_offset_blinds_up_weekend
+    - input_datetime.control_blinds_living_room_door_cooldown_during_night_open
+    - input_datetime.control_blinds_living_room_door_cooldown_during_night_close
+    - input_datetime.control_blinds_living_room_door_earliest_time_blinds_up
+    - input_datetime.control_blinds_living_room_door_latest_time_blinds_down
+    - input_datetime.control_blinds_living_room_door_offset_blinds_down_after_sunset
+    - input_datetime.control_blinds_living_room_door_openblinds_on_time
+    - input_datetime.control_blinds_living_room_door_closeblinds_on_time
+    - input_number.control_blinds_living_room_door_cooldown_night_blinds_position
+##End## living_room_door
 
-##Start## kitchen_level
-config_blinds_kitchen_level:
-  name: Config Blinds kitchen_level
+##Start## kitchen
+config_blinds_kitchen:
+  name: Config Blinds kitchen
   entities:
-    - input_boolean.control_blinds_kitchen_level_use_pd_on_close
-    - input_boolean.control_blinds_kitchen_level_openblinds
-    - input_boolean.control_blinds_kitchen_level_closeblinds
-    - input_boolean.control_blinds_kitchen_level_cooldown_during_night
-    - input_boolean.control_blinds_kitchen_level_sunsetsunrise
-    - input_datetime.control_blinds_kitchen_level_offset_blinds_up_weekend
-    - input_datetime.control_blinds_kitchen_level_cooldown_during_night_open
-    - input_datetime.control_blinds_kitchen_level_cooldown_during_night_close
-    - input_datetime.control_blinds_kitchen_level_earliest_time_blinds_up
-    - input_datetime.control_blinds_kitchen_level_latest_time_blinds_down
-    - input_datetime.control_blinds_kitchen_level_offset_blinds_down_after_sunset
-    - input_datetime.control_blinds_kitchen_level_openblinds_on_time
-    - input_datetime.control_blinds_kitchen_level_closeblinds_on_time
-    - input_number.control_blinds_kitchen_level_cooldown_night_blinds_position
-##End## kitchen_level
+    - input_boolean.control_blinds_kitchen_use_pd_on_close
+    - input_boolean.control_blinds_kitchen_openblinds
+    - input_boolean.control_blinds_kitchen_closeblinds
+    - input_boolean.control_blinds_kitchen_cooldown_during_night
+    - input_boolean.control_blinds_kitchen_sunsetsunrise
+    - input_datetime.control_blinds_kitchen_offset_blinds_up_weekend
+    - input_datetime.control_blinds_kitchen_cooldown_during_night_open
+    - input_datetime.control_blinds_kitchen_cooldown_during_night_close
+    - input_datetime.control_blinds_kitchen_earliest_time_blinds_up
+    - input_datetime.control_blinds_kitchen_latest_time_blinds_down
+    - input_datetime.control_blinds_kitchen_offset_blinds_down_after_sunset
+    - input_datetime.control_blinds_kitchen_openblinds_on_time
+    - input_datetime.control_blinds_kitchen_closeblinds_on_time
+    - input_number.control_blinds_kitchen_cooldown_night_blinds_position
+##End## kitchen
 
-##Start## parentsbedroom_level
-config_blinds_parentsbedroom_level:
-  name: Config Blinds parentsbedroom_level
+##Start## living_room_window
+config_blinds_living_room_window:
+  name: Config Blinds living_room_window
   entities:
-    - input_boolean.control_blinds_parentsbedroom_level_use_pd_on_close
-    - input_boolean.control_blinds_parentsbedroom_level_openblinds
-    - input_boolean.control_blinds_parentsbedroom_level_closeblinds
-    - input_boolean.control_blinds_parentsbedroom_level_cooldown_during_night
-    - input_boolean.control_blinds_parentsbedroom_level_sunsetsunrise
-    - input_datetime.control_blinds_parentsbedroom_level_offset_blinds_up_weekend
-    - input_datetime.control_blinds_parentsbedroom_level_cooldown_during_night_open
-    - input_datetime.control_blinds_parentsbedroom_level_cooldown_during_night_close
-    - input_datetime.control_blinds_parentsbedroom_level_earliest_time_blinds_up
-    - input_datetime.control_blinds_parentsbedroom_level_latest_time_blinds_down
-    - input_datetime.control_blinds_parentsbedroom_level_offset_blinds_down_after_sunset
-    - input_datetime.control_blinds_parentsbedroom_level_openblinds_on_time
-    - input_datetime.control_blinds_parentsbedroom_level_closeblinds_on_time
-    - input_number.control_blinds_parentsbedroom_level_cooldown_night_blinds_position
-##End## parentsbedroom_level
+    - input_boolean.control_blinds_living_room_window_use_pd_on_close
+    - input_boolean.control_blinds_living_room_window_openblinds
+    - input_boolean.control_blinds_living_room_window_closeblinds
+    - input_boolean.control_blinds_living_room_window_cooldown_during_night
+    - input_boolean.control_blinds_living_room_window_sunsetsunrise
+    - input_datetime.control_blinds_living_room_window_offset_blinds_up_weekend
+    - input_datetime.control_blinds_living_room_window_cooldown_during_night_open
+    - input_datetime.control_blinds_living_room_window_cooldown_during_night_close
+    - input_datetime.control_blinds_living_room_window_earliest_time_blinds_up
+    - input_datetime.control_blinds_living_room_window_latest_time_blinds_down
+    - input_datetime.control_blinds_living_room_window_offset_blinds_down_after_sunset
+    - input_datetime.control_blinds_living_room_window_openblinds_on_time
+    - input_datetime.control_blinds_living_room_window_closeblinds_on_time
+    - input_number.control_blinds_living_room_window_cooldown_night_blinds_position
+##End## living_room_window
 
-##Start## living_room_window_level
-config_blinds_living_room_window_level:
-  name: Config Blinds living_room_window_level
+##Start## parentsbedroom
+config_blinds_parentsbedroom:
+  name: Config Blinds parentsbedroom
   entities:
-    - input_boolean.control_blinds_living_room_window_level_use_pd_on_close
-    - input_boolean.control_blinds_living_room_window_level_openblinds
-    - input_boolean.control_blinds_living_room_window_level_closeblinds
-    - input_boolean.control_blinds_living_room_window_level_cooldown_during_night
-    - input_boolean.control_blinds_living_room_window_level_sunsetsunrise
-    - input_datetime.control_blinds_living_room_window_level_offset_blinds_up_weekend
-    - input_datetime.control_blinds_living_room_window_level_cooldown_during_night_open
-    - input_datetime.control_blinds_living_room_window_level_cooldown_during_night_close
-    - input_datetime.control_blinds_living_room_window_level_earliest_time_blinds_up
-    - input_datetime.control_blinds_living_room_window_level_latest_time_blinds_down
-    - input_datetime.control_blinds_living_room_window_level_offset_blinds_down_after_sunset
-    - input_datetime.control_blinds_living_room_window_level_openblinds_on_time
-    - input_datetime.control_blinds_living_room_window_level_closeblinds_on_time
-    - input_number.control_blinds_living_room_window_level_cooldown_night_blinds_position
-##End## living_room_window_level
+    - input_boolean.control_blinds_parentsbedroom_use_pd_on_close
+    - input_boolean.control_blinds_parentsbedroom_openblinds
+    - input_boolean.control_blinds_parentsbedroom_closeblinds
+    - input_boolean.control_blinds_parentsbedroom_cooldown_during_night
+    - input_boolean.control_blinds_parentsbedroom_sunsetsunrise
+    - input_datetime.control_blinds_parentsbedroom_offset_blinds_up_weekend
+    - input_datetime.control_blinds_parentsbedroom_cooldown_during_night_open
+    - input_datetime.control_blinds_parentsbedroom_cooldown_during_night_close
+    - input_datetime.control_blinds_parentsbedroom_earliest_time_blinds_up
+    - input_datetime.control_blinds_parentsbedroom_latest_time_blinds_down
+    - input_datetime.control_blinds_parentsbedroom_offset_blinds_down_after_sunset
+    - input_datetime.control_blinds_parentsbedroom_openblinds_on_time
+    - input_datetime.control_blinds_parentsbedroom_closeblinds_on_time
+    - input_number.control_blinds_parentsbedroom_cooldown_night_blinds_position
+##End## parentsbedroom
 
-##Start## guest_room_level
-config_blinds_guest_room_level:
-  name: Config Blinds guest_room_level
+##Start## guest_room
+config_blinds_guest_room:
+  name: Config Blinds guest_room
   entities:
-    - input_boolean.control_blinds_guest_room_level_use_pd_on_close
-    - input_boolean.control_blinds_guest_room_level_openblinds
-    - input_boolean.control_blinds_guest_room_level_closeblinds
-    - input_boolean.control_blinds_guest_room_level_cooldown_during_night
-    - input_boolean.control_blinds_guest_room_level_sunsetsunrise
-    - input_datetime.control_blinds_guest_room_level_offset_blinds_up_weekend
-    - input_datetime.control_blinds_guest_room_level_cooldown_during_night_open
-    - input_datetime.control_blinds_guest_room_level_cooldown_during_night_close
-    - input_datetime.control_blinds_guest_room_level_earliest_time_blinds_up
-    - input_datetime.control_blinds_guest_room_level_latest_time_blinds_down
-    - input_datetime.control_blinds_guest_room_level_offset_blinds_down_after_sunset
-    - input_datetime.control_blinds_guest_room_level_openblinds_on_time
-    - input_datetime.control_blinds_guest_room_level_closeblinds_on_time
-    - input_number.control_blinds_guest_room_level_cooldown_night_blinds_position
-##End## guest_room_level
+    - input_boolean.control_blinds_guest_room_use_pd_on_close
+    - input_boolean.control_blinds_guest_room_openblinds
+    - input_boolean.control_blinds_guest_room_closeblinds
+    - input_boolean.control_blinds_guest_room_cooldown_during_night
+    - input_boolean.control_blinds_guest_room_sunsetsunrise
+    - input_datetime.control_blinds_guest_room_offset_blinds_up_weekend
+    - input_datetime.control_blinds_guest_room_cooldown_during_night_open
+    - input_datetime.control_blinds_guest_room_cooldown_during_night_close
+    - input_datetime.control_blinds_guest_room_earliest_time_blinds_up
+    - input_datetime.control_blinds_guest_room_latest_time_blinds_down
+    - input_datetime.control_blinds_guest_room_offset_blinds_down_after_sunset
+    - input_datetime.control_blinds_guest_room_openblinds_on_time
+    - input_datetime.control_blinds_guest_room_closeblinds_on_time
+    - input_number.control_blinds_guest_room_cooldown_night_blinds_position
+##End## guest_room
 
 ##Start## global
 config_blinds_global:
@@ -156,10 +156,10 @@ config_blinds:
   entities:
     - group.config_blinds_lisacover
     - group.config_blinds_mariecover
-    - group.config_blinds_kitchen_level
-    - group.config_blinds_guest_room_level
-    - group.config_blinds_living_room_window_level
-    - group.config_blinds_living_room_door_level
-    - group.config_blinds_parentsbedroom_level
+    - group.config_blinds_living_room_door
+    - group.config_blinds_kitchen
+    - group.config_blinds_living_room_window
+    - group.config_blinds_parentsbedroom
+    - group.config_blinds_guest_room
     - group.config_blinds_global
 ##End## config_blinds

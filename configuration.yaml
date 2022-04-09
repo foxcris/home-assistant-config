@@ -29,6 +29,10 @@ http:
   #ssl_key: /etc/letsencrypt/live/home.volker-boehme.de/privkey.pem
   ip_ban_enabled: True
   login_attempts_threshold: 5
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 172.116.1.0/24
+    - fd00:b000:0116::/48
 
 # Checks for available updates
 updater:
@@ -75,15 +79,15 @@ binary_sensor: !include binary_sensor.yaml
 device_tracker: !include devicetracker.yaml
 owntracks: !include owntracks.yaml
 
-zwave:
+#zwave:
   #usb_path: /dev/zwave
-  usb_path: /dev/ttyACM0
-  device_config: !include zwave_device_config.yaml
-  network_key: !secret zwave_network_key
+#  usb_path: /dev/ttyACM0
+#  device_config: !include zwave_device_config.yaml
+#  network_key: !secret zwave_network_key
 #  autoheal: false
 
 telegram_bot: !include telegram.yaml
-matrix: !include matrix.yaml
+#matrix: !include matrix.yaml
 notify: !include notify.yaml
 
 group: !include_dir_merge_named groups
@@ -93,7 +97,7 @@ panel_iframe: !include paneliframe.yaml
 mqtt: !include mqtt.yaml
 
 # This will override the default home zone
-zone: !include zone.yaml
+#zone: !include zone.yaml
 
 automation old: !include_dir_merge_list automation
 automation: !include automations.yaml

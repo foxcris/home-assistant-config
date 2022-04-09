@@ -6,34 +6,6 @@
       - 'time_date'
       - 'time_utc'
 #      - 'beat'
-  - platform: fritzbox_netmonitor
-    host: 192.168.178.1
-  - platform: template
-    sensors:
-      fritz_netmonitor_transmission_rate_down:
-        friendly_name: Transmission Rate Down
-        value_template: >
-                          {{ '%.2f' | format(states.sensor.fritz_netmonitor.attributes.transmission_rate_down | float / 1024)}}
-        unit_of_measurement: 'kB/s'
-      fritz_netmonitor_transmission_rate_up:
-        friendly_name: Transmission Rate Up
-        value_template: >
-                          {{ '%.2f' | format(states.sensor.fritz_netmonitor.attributes.transmission_rate_up | float / 1024) }}
-        unit_of_measurement: 'kB/s'
-      fritz_netmonitor_external_ip:
-        friendly_name: External IP
-        value_template: >
-                          {{ states.sensor.fritz_netmonitor.attributes.external_ip }}
-      sun_next_rising:
-        friendly_name: Sun Next Rising
-        value_template: >
-                          {{ as_timestamp(states.sun.sun.attributes.next_rising) | timestamp_local }}
-        icon_template: mdi:weather-sunset-up
-      sun_next_setting:
-        friendly_name: Sun Next Setting
-        value_template: >
-                          {{ as_timestamp(states.sun.sun.attributes.next_setting) | timestamp_local }}
-        icon_template: mdi:weather-sunset-down
   - platform: darksky
     api_key: !secret dark_sky_api_key
     scan_interval: '00:15'
