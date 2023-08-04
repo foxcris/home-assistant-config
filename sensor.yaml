@@ -6,38 +6,6 @@
       - 'time_date'
       - 'time_utc'
 #      - 'beat'
-  - platform: darksky
-    api_key: !secret dark_sky_api_key
-    scan_interval: '00:15'
-    forecast: 1
-    language: de
-    monitored_conditions:
-      - summary
-      - precip_type
-      - precip_intensity
-      - precip_probability
-      - precip_accumulation
-      - temperature
-      - apparent_temperature
-      - dew_point
-      - wind_speed
-      - wind_bearing
-      - cloud_cover
-      - humidity
-      - pressure
-      - visibility
-      - ozone
-      - minutely_summary
-      - hourly_summary
-      - daily_summary
-      - temperature_high
-      - temperature_low
-      - apparent_temperature_high
-      - apparent_temperature_low
-      - precip_intensity_max
-      - uv_index
-      - moon_phase
-      - icon
   - platform: systemmonitor
     resources:
       - type: memory_free
@@ -51,6 +19,6 @@
         arg: lo
       - type: network_in
         arg: eth0
-  - platform: dwd_weather_warnings
-    region_name: Stadt Pulheim
+#  - platform: dwd_weather_warnings
+#    region_name: Stadt Pulheim
 

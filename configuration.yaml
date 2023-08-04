@@ -1,19 +1,21 @@
-homeassistant:
-  # Name of the location where Home Assistant is running
-  name: Home
+#homeassistant:
+#  # Name of the location where Home Assistant is running
+#  name: Home
   # Location required to calculate the time the sun rises and sets
-  latitude: !secret home_latitude
-  longitude: !secret home_longitude
+#  latitude: !secret home_latitude
+#  longitude: !secret home_longitude
   # Impacts weather/sunrise data (altitude above sea level in meters)
-  elevation: 49
+#  elevation: 49
   # metric for Metric, imperial for Imperial
-  unit_system: metric
+#  unit_system: metric
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-  time_zone: Europe/Berlin
-  auth_providers:
-   - type: homeassistant
-   - type: legacy_api_password
-     api_password: !secret http_password
+#  time_zone: Europe/Berlin
+#  auth_providers:
+#   - type: homeassistant
+#   - type: legacy_api_password
+#     api_password: !secret http_password
+#  external_url: "https://home-assistant.lan"
+#  internal_url: "https://home-assistant.lan"
 
 # Show links to resources in log and frontend
 #introduction:
@@ -24,19 +26,25 @@ frontend:
 http:
   server_port: 8123
   # Uncomment this if you are using SSL or running in Docker etc
-  #base_url: home:8123
+#  base_url: https://home-assistant.lan
   #ssl_certificate: /etc/letsencrypt/live/home.volker-boehme.de/fullchain.pem
   #ssl_key: /etc/letsencrypt/live/home.volker-boehme.de/privkey.pem
-  ip_ban_enabled: True
-  login_attempts_threshold: 5
+#  ip_ban_enabled: True
+#  login_attempts_threshold: 5
   use_x_forwarded_for: true
   trusted_proxies:
-    - 172.116.1.0/24
-    - fd00:b000:0116::/48
-
-# Checks for available updates
-updater:
-
+    - 172.16.0.0/16
+    - 172.17.0.0/16
+    - 192.168.0.0/16
+    - 127.0.0.1
+    - ::1
+    - fe80::/64
+    - fe00::/64
+    - fd00::/64
+    - fd73:ceae:f91c::/48
+    - fd84:ceae:f91c::/48
+    - fd62:ceae:f91c::/48
+ 
 #default config:
 default_config:
 
@@ -66,15 +74,15 @@ logbook:
 map:
 
 # Track the sun
-sun:
+#sun:
 
 # Weather Prediction
-weather:
-  - platform: darksky
-    api_key: !secret dark_sky_api_key
+#weather:
+#  - platform: darksky
+#    api_key: !secret dark_sky_api_key
 
 sensor: !include sensor.yaml
-binary_sensor: !include binary_sensor.yaml
+#binary_sensor: !include binary_sensor.yaml
 
 device_tracker: !include devicetracker.yaml
 owntracks: !include owntracks.yaml
@@ -94,7 +102,7 @@ group: !include_dir_merge_named groups
 
 panel_iframe: !include paneliframe.yaml
 
-mqtt: !include mqtt.yaml
+#mqtt: !include mqtt.yaml
 
 # This will override the default home zone
 #zone: !include zone.yaml
@@ -112,12 +120,14 @@ input_datetime: !include input_datetime.yaml
 
 logger:
   default: info
-
+#  logs:
+#    homeassistant.components.websocket_api.http.connection: debug
+  
 recorder:
   purge_keep_days: 10
   db_url: !secret mariadb
 
-homematic: !include homematic.yaml
+#homematic: !include homematic.yaml
 
 script: !include scripts.yaml
 
@@ -139,3 +149,13 @@ utility_meter: !include utilitymeter.yaml
 
 graphite: 
   host: graphite
+
+prometheus:
+ 
+statsd:
+  host: sensu-agent
+
+#miele: 
+#  client_id: !secret miele_client_id
+#  client_secret: !secret miele_client_secret
+

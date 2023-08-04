@@ -1,17 +1,17 @@
-broker: !secret mqtt_broker
-port: 8883
-client_id: home-assistant-1
-keepalive: 60
-username: !secret mqtt_username
-password: !secret mqtt_password
+#broker: !secret mqtt_broker
+#port: 8883
+#client_id: home-assistant-1
+#keepalive: 60
+#username: !secret mqtt_username
+#password: !secret mqtt_password
 certificate: /etc/ssl/certs/ca-certificates.crt
-birth_message:
-  topic: 'hass/status'
-  payload: 'online'
-  qos: 1
-  retain: true
-will_message:
-  topic: 'hass/status'
-  payload: 'offline'
-  qos: 1
-  retain: true
+#birth_message:
+#  topic: 'hass/status'
+#  payload: 'online'
+#  qos: 1
+#  retain: true
+#will_message:
+#  topic: 'hass/status'
+#  payload: 'offline'
+#  qos: 1
+#  retain: true
