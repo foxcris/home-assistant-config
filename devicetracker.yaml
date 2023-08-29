@@ -3,3 +3,4 @@
     username: !secret traccar_username
     password: !secret traccar_password
     ssl: true
+    port: 443
