@@ -51,9 +51,6 @@ default_config:
 # Configuration panel
 config:
 
-# Discover some devices automatically
-discovery:
-
 #person
 person: 
 
