@@ -97,7 +97,7 @@ notify: !include notify.yaml
 
 group: !include_dir_merge_named groups
 
-panel_iframe: !include paneliframe.yaml
+#panel_iframe: !include paneliframe.yaml
 
 #mqtt: !include mqtt.yaml
 

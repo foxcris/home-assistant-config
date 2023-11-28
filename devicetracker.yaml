@@ -1,6 +1,9 @@
-  - platform: traccar
-    host: traccar.volker-boehme.de
-    username: !secret traccar_username
-    password: !secret traccar_password
-    ssl: true
-    port: 443
+#  - platform: traccar
+#    host: traccar.volker-boehme.de
+#    username: !secret traccar_username
+#    password: !secret traccar_password
+#    ssl: true
+#    port: 443
+#    event: ['all_events']
+#    new_device_defaults:
+#      track_new_devices: true

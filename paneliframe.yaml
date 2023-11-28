@@ -1,4 +1,4 @@
 grafana:
    title: 'Grafana'
    icon: 'mdi:chart-areaspline'
-   url: 'http://home:3000/'
+   url: 'https://grafana.lan/'
