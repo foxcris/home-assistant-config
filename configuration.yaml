@@ -156,3 +156,4 @@ statsd:
 #  client_id: !secret miele_client_id
 #  client_secret: !secret miele_client_secret
 
+influxdb: !include influxdb.yaml

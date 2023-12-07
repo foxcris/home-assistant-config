@@ -33,6 +33,13 @@
   host: influxdb
   port: 8086
   max_retries: 5
-  username: !secret influx_user
-  password: !secret influx_passwd
-  database: home_assistant
+  bucket: home-assistant
+  token: !secret influxdb_token
+  api_version: 2
+  ssl: false
+  organization: home-assistant
+  tags:
+    source: HA
+  tags_attributes:
+    - friendly_name
+  default_measurement: units
