@@ -33,17 +33,10 @@ http:
 #  login_attempts_threshold: 5
   use_x_forwarded_for: true
   trusted_proxies:
-    - 172.16.0.0/16
-    - 172.17.0.0/16
-    - 192.168.0.0/16
     - 127.0.0.1
     - ::1
-    - fe80::/64
-    - fe00::/64
-    - fd00::/64
-    - fd73:ceae:f91c::/48
-    - fd84:ceae:f91c::/48
-    - fd62:ceae:f91c::/48
+    - 172.16.0.0/16
+    - 172.17.0.0/16
  
 #default config:
 default_config:

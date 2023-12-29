@@ -1,1 +1,208 @@
-[]
+- id: '1703868780817'
+  alias: Satz Rolladen Küche schließen
+  description: ''
+  trigger:
+  - platform: conversation
+    command:
+    - Rolladen in der Küche schließen
+  condition: []
+  action:
+  - service: cover.close_cover
+    target:
+      area_id: 9a0a6cae60544cde9ff05697e988d4f5
+    data: {}
+  mode: single
+- id: '1703869269304'
+  alias: Satz Staubsauger im Wohnzimmer starten
+  description: ''
+  trigger:
+  - platform: conversation
+    command:
+    - Staubsauger im Wohnzimmer starten
+  condition: []
+  action:
+  - service: vacuum.start
+    target:
+      area_id: 3449d540d31440e1a9f712bff15d7c00
+    data: {}
+  mode: single
+- id: '1703869386101'
+  alias: Satz alle Rolläden schließen
+  description: ''
+  trigger:
+  - platform: conversation
+    command:
+    - Alle Rolladen schließen
+    - Fahre alle Rollanden runter
+    - Rolladen schließen
+  condition: []
+  action:
+  - service: cover.close_cover
+    data: {}
+    target:
+      area_id:
+      - 656c279460254f8eb583b86962635e40
+      - e202f531a4074b4eb03b6498a7767fc2
+      - 4bb0e959d3b34202b983fe1aa6ff93df
+      - 9a0a6cae60544cde9ff05697e988d4f5
+      - f95de08f9df746ffbfaf376f8b62e924
+      - 3449d540d31440e1a9f712bff15d7c00
+  mode: single
+- id: '1703873029402'
+  alias: Satz Rolladen im Wohnzimmer schließen
+  description: ''
+  trigger:
+  - platform: conversation
+    command:
+    - Rolladen im Wohnzimmer schließen
+  condition: []
+  action:
+  - service: cover.close_cover
+    data: {}
+    target:
+      area_id: 3449d540d31440e1a9f712bff15d7c00
+  mode: single
+- id: '1703873145937'
+  alias: Satz Rolladen im Erdgeschoss schließen
+  description: ''
+  trigger:
+  - platform: conversation
+    command:
+    - Alle Rolladen im Erdgeschoss schließen
+    - Rolladen im Erdgeschoss schließen
+  condition: []
+  action:
+  - service: cover.close_cover
+    target:
+      area_id:
+      - 9a0a6cae60544cde9ff05697e988d4f5
+      - 3449d540d31440e1a9f712bff15d7c00
+    data: {}
+  mode: single
+- id: '1703873223150'
+  alias: Satz Licht am Weihnachtsbaum einschalten
+  description: ''
+  trigger:
+  - platform: conversation
+    command:
+    - Licht am Weihnachtsbaum einschalten
+    - Weihnachtsbaum einschalten
+  condition: []
+  action:
+  - service: light.turn_on
+    target:
+      device_id: 60a9a794348210bfe6220b0311cfe1a4
+    data: {}
+  mode: single
+- id: '1703873262017'
+  alias: Satz Licht am Weihnachtsbaum ausschalten
+  description: ''
+  trigger:
+  - platform: conversation
+    command:
+    - Licht am Weihnachtsbaum ausschalten
+    - Weihnachtsbaum ausschalten
+  condition: []
+  action:
+  - service: light.turn_off
+    target:
+      entity_id: []
+      device_id:
+      - 60a9a794348210bfe6220b0311cfe1a4
+      area_id: []
+    data: {}
+  mode: single
+- id: '1703873366294'
+  alias: Satz Alle Rolladen öffnen
+  description: ''
+  trigger:
+  - platform: conversation
+    command:
+    - Alle Rolladen öffnen
+    - Fahre alle Rollanden hoch
+    - Rolladen öffnen
+  condition: []
+  action:
+  - service: cover.open_cover
+    target:
+      entity_id: []
+      device_id: []
+      area_id:
+      - 656c279460254f8eb583b86962635e40
+      - e202f531a4074b4eb03b6498a7767fc2
+      - 4bb0e959d3b34202b983fe1aa6ff93df
+      - 9a0a6cae60544cde9ff05697e988d4f5
+      - f95de08f9df746ffbfaf376f8b62e924
+      - 3449d540d31440e1a9f712bff15d7c00
+    data: {}
+  mode: single
+- id: '1703873409407'
+  alias: Satz Rolladen im Erdgeschoss öffnen
+  description: ''
+  trigger:
+  - platform: conversation
+    command:
+    - Alle Rolladen im Erdgeschoss öffnen
+    - Rolladen im Erdgeschoss öffnen
+  condition: []
+  action:
+  - service: cover.open_cover
+    target:
+      entity_id: []
+      device_id: []
+      area_id:
+      - 9a0a6cae60544cde9ff05697e988d4f5
+      - 3449d540d31440e1a9f712bff15d7c00
+    data: {}
+  mode: single
+- id: '1703873471013'
+  alias: Satz Rolladen im Wohnzimmer öffnen
+  description: ''
+  trigger:
+  - platform: conversation
+    command:
+    - Rolladen im Wohnzimmer öffnen
+  condition: []
+  action:
+  - service: cover.open_cover
+    target:
+      entity_id: []
+      device_id: []
+      area_id:
+      - 3449d540d31440e1a9f712bff15d7c00
+    data: {}
+  mode: single
+- id: '1703873507982'
+  alias: Satz Rolladen in der Küche öffnen
+  description: ''
+  trigger:
+  - platform: conversation
+    command:
+    - Rolladen in der Küche öffnen
+  condition: []
+  action:
+  - service: cover.open_cover
+    target:
+      entity_id: []
+      device_id: []
+      area_id:
+      - 9a0a6cae60544cde9ff05697e988d4f5
+    data: {}
+  mode: single
+- id: '1703873562771'
+  alias: Satz Staubsauger im Wohnzimmer stoppen
+  description: ''
+  trigger:
+  - platform: conversation
+    command:
+    - Staubsauger im Wohnzimmer stoppen
+  condition: []
+  action:
+  - service: vacuum.stop
+    target:
+      entity_id: []
+      device_id: []
+      area_id:
+      - 3449d540d31440e1a9f712bff15d7c00
+    data: {}
+  mode: single
